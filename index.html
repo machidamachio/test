@@ -6,10 +6,11 @@
   <body style="margin:0;overflow:hidden;">
     <a-scene embedded arjs vr-mode-ui="enabled:false">
       <a-assets>
-        <a-asset-item id="sample-obj" src="yuki.glb"></a-asset-item>
+        <a-asset-item id="sample-obj" src="yuki.obj"></a-asset-item>
+        <a-asset-item id="sample-mtl" src="yuki.mtl"></a-asset-item>
       </a-assets>
       <a-marker presente="hiro">
-        <a-entity gltf-model="#sample-obj"></a-entity>
+        <a-obj-model a-entity gltf-model="#sample-obj"></a-obj-model>
       </a-marker>
       
       <a-entity camera></a-entity>
